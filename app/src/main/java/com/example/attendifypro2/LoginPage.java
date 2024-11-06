@@ -76,7 +76,8 @@ public class LoginPage extends AppCompatActivity {
                                if(task.isSuccessful())
                                {
                                    Toast.makeText(LoginPage.this , "Login Successful" , Toast.LENGTH_SHORT).show();
-                                   Intent intent = new Intent(LoginPage.this , Dashboard.class);
+                                   Intent intent = new Intent(LoginPage.this , UserTypeSelectionActivity.class);
+                                   Toast.makeText(LoginPage.this , "Successful" , Toast.LENGTH_SHORT).show();
                                    startActivity(intent);
                                    finish();
                                }
